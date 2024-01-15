@@ -1,0 +1,93 @@
+/* start global rulse */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-color : #6c9894 ;
+    --main-color-alt : #f4f9f4 ;
+    --main-tran : 0.3s ;
+    --main-top : 10px ;
+    --main-bottom : 50px ;
+}
+::-webkit-scrollbar {width: 15px;}
+::-webkit-scrollbar-track {background-color: var(--main-color-alt);}
+::-webkit-scrollbar-thumb {background-color:#a7d7c5;}
+::-webkit-scrollbar-thumb:hover {background-color:var(--main-color) ;}
+html {
+    scroll-behavior: smooth;
+    background-color:#f4f9f4;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+a {
+    text-decoration: none;color: white;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.main-heading {text-align: center;margin-bottom: 80px;}
+.main-heading h2 {font-size: 40px;line-height: 2;}
+.main-heading p  {font-size: 20px;line-height: 2;}
+/* end global rulse */
+/* ---------------------------- */
+/* start header */
+header {top: 0;left: 0;width: 100%;height: 100%;z-index: 5;margin: auto;position: absolute;}
+header .container {display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;position: relative;margin-top: 40px;}
+header .container::before {content: "";background-color:#e2ede8;height: 30px;width: calc(100% - 0px);position: absolute;bottom: -7px;left: 15px;}
+header .container ul {display: flex;}
+header .container ul li {position: relative;}
+header .container ul li::before { content: ""; ; z-index: 100; width: 0; height: 4px; bottom: -50px; left: -5%; position: absolute; transition: var(--main-tran); -webkit-transition: var(--main-tran); -moz-transition: var(--main-tran); -ms-transition: var(--main-tran); -o-transition: var(--main-tran); }
+header .container ul li:hover::before {width: 100%;}
+header .container ul li a { color: white;padding:42px 10px; font-size: 15px;font-weight: bold; transition:var(--main-tran) ; -webkit-transition:var(--main-tran) ; -moz-transition:var(--main-tran) ; -ms-transition:var(--main-tran) ; -o-transition:var(--main-tran) ; }
+header .container ul li a:hover {color: var(--main-color);}
+header .container ul li:first-child a {color: var(--main-color);}
+header .container .image::before { content: "";width: 80px;height: 80px;top: -30px;left: 10px;background-color: #a7d7c5;position: absolute;border-radius: 0 10px 0 10px;}
+header .container .image img {width: 65px;max-width: 100%;position: absolute;top: -31px;left: 15px;}
+@media (max-width:992px) {header .container {flex-direction: column;} header .container .image {order: -1;margin-bottom: 20px;}header {position: absolute;}header .container ul li a {padding: 13px 21px;}header .container ul li::before {bottom: -20px;}}
+@media (max-width:767px) { header .container ul li a {padding: 4px;font-size: 8px;}}
+/* end header */
+
+/* start landing */
+.landing {background-color: var(--main-color-alt);background-size: cover;min-height: 100vh;position:relative;width: 100%;height: 100%;top: 0;left: 0;}
+.landing::before {content: "";background-color: var(--main-color-alt);position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.landing .container {}
+.landing .container .inpu {}
+.landing .container .text {top: 50%;text-align: center; position: absolute; right: 0; width: 50%; padding: 50px; transform:translateY(-50%) ; -webkit-transform:translateY(-50%) ; -moz-transform:translateY(-50%) ; -ms-transform:translateY(-50%) ; -o-transform:translateY(-50%) ; }
+.landing .container .text h1 {color:var(--main-color);margin-bottom: 30px;}
+.landing .container .text p {color: var(--main-color);line-height: 1.4;text-align: justify;}
+.landing .container .text form {}
+.landing .container .text form input[type=button] {width:172px ;height:30px ;background-color: var(--main-color);border: none;border-radius:10px;}
+.landing .container .text img {max-width: 100%;width: 150px;}
+.landing .container .inpu .imge {}
+.landing .container .inpu .imge img {width: 666px;max-width: 100%;}
+@media (max-width:992px) {.landing .container .text {width: 100%;}}
+/* end landing */
