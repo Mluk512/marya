@@ -133,3 +133,65 @@ header .container .image img {width: 65px;max-width: 100%;position: absolute;top
 .choose2 .container .fon form {margin-top: 25px;}
 .choose2 .container .fon form input[type=button] {color: var(--main-color-alt);background-color: var(--main-color);border:none;width:200px ;height:40px ;}
 /* end choose2 */
+
+
+
+
+
+.fixed-bottom-actions {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+.fixed-bottom-actions .go-top-button {
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #e26e0b;
+    transition: .5s ease;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    transform: translateY(16px);
+    visibility: hidden;
+    opacity: 0;
+}
+.fixed-bottom-actions .fixed-whatsapp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    padding: 12px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #25d366;
+    transition: all .3s ease-in-out;
+}
+.fixed-bottom-actions .go-top-button svg {
+    height: 18px;
+}
+a:link {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+.fixed-bottom-actions .fixed-whatsapp-icon svg {
+    margin-top: 2px;
+    fill: #fff;
+    width: 28px;
+    height: 28px;
+}
