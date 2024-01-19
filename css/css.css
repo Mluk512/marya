@@ -134,6 +134,21 @@ header .container .image img {width: 65px;max-width: 100%;position: absolute;top
 .choose2 .container .fon form input[type=button] {color: var(--main-color-alt);background-color: var(--main-color);border:none;width:200px ;height:40px ;}
 /* end choose2 */
 
+/* start footer */
+.footer {padding-top: 60px;padding-bottom: 60px;background-color: var(--main-color);color: var(--main-color-alt);}
+.footer .container {display: grid;grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));gap: 40px;;}
+.footer .container .links h4 {border-bottom: 3px solid var(--main-color-alt);padding-bottom: 10px;}
+.footer .container .links ul {line-height: 1.6;}
+.footer .container .links ul li {}
+.footer .container .links ul li a {}
+.footer .container .links ul li a:hover {color: teal;}
+
+.footer .container .map {text-align: center;border-left: 1px solid white;border-radius: 10px;border-right: 1px solid white;}
+.footer .container .map iframe {border-radius: 6px;}
+
+.footer .container .me {text-align: center;margin-top:150px;}
+/* end footer */
+
 
 
 
