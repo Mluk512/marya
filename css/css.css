@@ -96,8 +96,8 @@ header .container .image img {width: 65px;max-width: 100%;position: absolute;top
 .Admin {background-color: var(--main-color);background-size: cover;color: var(--main-color-alt);min-height: 100vh;position:relative;width: 100%;height: 100%;top: 0;left: 0;}
 .Admin .container {display: flex;justify-content:space-between;align-items: center;text-align: center;}
 .Admin .container .imag {padding: 30px;position: relative;}
+.Admin .container .imag::before {content: "";position: absolute;background: url(../images/shape002.png);top: 0px;left: 0px;width:150px;height:150px;}
 .Admin .container .imag .img {border-radius: 50%;width: 200px;max-width: 100%;position: relative;padding: 30px;}
-.Admin .container .imag::before {content: "";position: absolute;background: url(../images/shape002.png);top: -70px;left: -51px;width:404px;height:100%;}
 /* end landing */
 
 /* start Achievements */
@@ -111,7 +111,7 @@ header .container .image img {width: 65px;max-width: 100%;position: absolute;top
 /* end Achievements */
 
 /* start choose */
-.choose {color: var(--main-color-alt);background-color: var(--main-color);position: relative;min-height: 100vh;overflow: hidden;}
+.choose {color: var(--main-color-alt);background-color: var(--main-color);position: relative;min-height: 100vh;overflow: hidden;padding: 0;margin: 0;}
 .choose .container {display: flex;justify-content: space-between;align-items: center;}
 .choose .container .image {padding-left: 60px;}
 .choose .container .image img {width:603px;min-width: 100%;}
@@ -123,7 +123,7 @@ header .container .image img {width: 65px;max-width: 100%;position: absolute;top
 /* end choose */
 
 /* start choose2 */
-.choose2 {color: var(--main-color);background-color: var(--main-color-alt);position: relative;min-height: 100vh;overflow: hidden;}
+.choose2 {color: var(--main-color);background-color: var(--main-color-alt);position: relative;min-height: 100vh;overflow: hidden;padding:0 ;margin: 0;}
 .choose2::before {content: "";background: url(../images/shape.png);width: 666px;height: 668px;position: absolute;top: 0px;right: -500px ;}
 .choose2 .container {display: flex;justify-content: space-between;align-items: center;}
 .choose2 .container .image {padding-right: 60px;}
