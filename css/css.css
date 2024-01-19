@@ -94,10 +94,10 @@ header .container .image img {width: 65px;max-width: 100%;position: absolute;top
 
 /* end landing */
 .Admin {background-color: var(--main-color);background-size: cover;color: var(--main-color-alt);min-height: 100vh;position:relative;width: 100%;height: 100%;top: 0;left: 0;}
-.Admin .container {display: flex;justify-content:space-between;align-items: center;text-align: center;}
-.Admin .container .imag {padding: 30px;position: relative;}
-.Admin .container .imag::before {content: "";position: absolute;background: url(../images/shape002.png);top: 0px;left: 0px;width:150px;height:150px;}
-.Admin .container .imag .img {border-radius: 50%;width: 200px;max-width: 100%;position: relative;padding: 30px;}
+.Admin .container {display:grid;grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));gap: 40px;text-align: center;padding: 0;}
+.Admin .container .imag {padding: 0;position: relative;}
+.Admin .container .imag::before {content: "";position: absolute;background: url(../images/shape002.png);top: -22px;left: 27px;width:301px;height:299px;margin-left: 0px;}
+.Admin .container .imag .img {border-radius: 50%;width: 250px;max-width: 100%;position: relative;padding: 20px;}
 /* end landing */
 
 /* start Achievements */
