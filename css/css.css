@@ -138,7 +138,7 @@ header .container .image img {width: 65px;max-width: 100%;position: absolute;top
 .footer {padding-top: 60px;padding-bottom: 60px;background-color: var(--main-color);color: var(--main-color-alt);overflow: hidden;position: relative;}
 .footer .container {display: grid;grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));gap: 40px;position: relative;}
 .footer::before {content: "";position: absolute;left: -160px;top:75px;background-image: url(../images/shape002.png);width:301px ;height: 299px;}
-.footer .container .links h4 {border-bottom: 3px solid var(--main-color-alt);padding-bottom: 10px;}
+.footer .container .links h4 {display: inline-block;border-bottom: 3px solid var(--main-color-alt);padding-bottom: 10px;}
 .footer .container .links ul {line-height: 1.6;}
 .footer .container .links ul li a:hover {color: teal;}
 
