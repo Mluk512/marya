@@ -60,7 +60,7 @@ ul {
 /* end global rulse */
 /* ---------------------------- */
 /* start header */
-header {padding: 20px;position: absolute;top: 0;z-index: 20;}
+header {padding: 20px;position: absolute;top: 0;z-index: 20;left: 50%;transform: translate(-50%);}
 header .container {display: flex;justify-content:space-between;align-items: center;direction: ltr;}
 header .container img {width: 60px}
 header .container .links {position: relative;direction: rtl;}
@@ -74,23 +74,23 @@ header .container .links ul {list-style: none;margin: 0;padding: 0;background-co
 header .links ul::before {content: "";border-width: 10px;border-style: solid;border-color: transparent transparent var(--main-color) transparent;position: absolute;right: 5px;top: -20px;}
 header .container .links:hover ul {display: block;}
 header .container .links ul li a {display: block;padding: 15px;text-decoration: none;color: #ffffff;transition: var(--main-tran);-webkit-transition: var(--main-tran);-moz-transition: var(--main-tran);-ms-transition: var(--main-tran);-o-transition: var(--main-tran);}
-header .container .links ul li a:hover {padding-left: 25px;}
+header .container .links ul li a:hover {padding-left: 25px;color: violet;}
 header .container .links ul li:not(:last-child) a {border-bottom: 1px solid #ddd;}
 header .container .image::before { content: "";width: 80px;height: 80px;top: -30px;left: 10px;background-color: #a7d7c5;position: absolute;border-radius: 0 10px 0 10px;}
 /* end header */
 
 /* start landing */
-.landing { background-size: cover; height: calc(100vh - 64px); position: relative;}
-.landing .text {top: 50%;text-align: center; position: absolute; right: 0; width: 50%; padding: 50px; transform:translateY(-50%) ; -webkit-transform:translateY(-50%) ; -moz-transform:translateY(-50%) ; -ms-transform:translateY(-50%) ; -o-transform:translateY(-50%) ; }
+.landing { background-size: cover; height: calc(100vh - 112.29px); position: relative:}
+.landing .container {display: flex;justify-content: space-between;}
+.landing .text {margin-top: 200px;text-align: center; width: 50%;  }
 .landing .text h1 {color:var(--main-color);margin-bottom: 30px;}
 .landing .text p {color: var(--main-color);line-height: 1.4;text-align: justify;}
 .landing .text form {}
 .landing .text form input[type=button] {width:172px ;color: white;height:30px ;background-color: var(--main-color);border: none;border-radius:10px;}
-.landing .imge {margin-top: 75px;position: absolute;left: 15px;top: 0;}
-.landing .imge::before {content: "";position: absolute;border-radius: 50%;border: 5px solid #6c9894;background-image: url(../images/maria.jpg);width:196px;height:200px;left:150px;top:50%;transform:translateY(-50%) ; -webkit-transform:translateY(-50%) ; -moz-transform:translateY(-50%) ; -ms-transform:translateY(-50%) ; -o-transform:translateY(-50%) ;;}
+.landing .imge {margin-top: 75px;}
+.landing .imge::before {content: "";position: absolute;border-radius: 50%;border: 5px solid #6c9894;background-image: url(../images/maria.jpg);width:196px;height:200px;left:420px;top:230px;}
 .landing .imge img {width:500px;max-width: 100%;}
-@media (max-width:992px) {.linding .container {display: }}
-@media (max-width:767px) {}
+@media (max-width:992px) { .landing .container {flex-wrap: wrap;}.landing .text {margin-left: auto;margin-right: auto;width: 300px;margin-top: 120px;} .landing .imge::before{left: 89px;top: 548px;}}
 /* end landing */
 
 /* end landing */
