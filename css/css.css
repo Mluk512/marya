@@ -66,17 +66,17 @@ header .container img {width: 60px}
 header .container .links {position: relative;direction: rtl;}
 header .container .links:hover .icon span:nth-child(2) {width: 100%;}
 header .container .links .icon {width: 30px;display: flex;flex-wrap: wrap;}
-header .container .links .icon span {background-color: #333;margin-bottom: 5px;height: 2px;}
+header .container .links .icon span {background-color: var(--main-color);margin-bottom: 5px;height: 2px;}
 header .container .links .icon span:first-child {width: 100%;}
 header .container .links .icon span:nth-child(2) {width: 60%;transition: var(--main-tran);}
 header .container .links .icon span:last-child {width: 100%;}
 header .container .links ul {list-style: none;margin: 0;padding: 0;background-color:var(--main-color);position: absolute;right:0;min-width: 200px;top: calc(100% + 15px);display: none;z-index: 100;}
 header .links ul::before {content: "";border-width: 10px;border-style: solid;border-color: transparent transparent var(--main-color) transparent;position: absolute;right: 5px;top: -20px;}
 header .container .links:hover ul {display: block;}
-header .container .links ul li a {display: block;padding: 15px;text-decoration: none;color: #ffffff;transition: var(--main-tran);-webkit-transition: var(--main-tran);-moz-transition: var(--main-tran);-ms-transition: var(--main-tran);-o-transition: var(--main-tran);}
+header .container .links ul li a {display: block;padding: 15px;text-decoration: none;color: var(--main-color-alt);transition: var(--main-tran);-webkit-transition: var(--main-tran);-moz-transition: var(--main-tran);-ms-transition: var(--main-tran);-o-transition: var(--main-tran);}
 header .container .links ul li a:hover {padding-left: 25px;color: violet;}
-header .container .links ul li:not(:last-child) a {border-bottom: 1px solid #ddd;}
-header .container .image::before { content: "";width: 80px;height: 80px;top: -30px;left: 10px;background-color: #a7d7c5;position: absolute;border-radius: 0 10px 0 10px;}
+header .container .links ul li:not(:last-child) a {border-bottom: 1px solid var(--main-color-alt);}
+header .container .image::before { content: "";width: 80px;height: 80px;top: -30px;left: 10px;background-color: var(--main-color);position: absolute;border-radius: 0 10px 0 10px;}
 @media (max-width:992px) {header {position: relative;padding: 0;}}
 /* end header */
 
@@ -87,9 +87,9 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 .landing .text h1 {color:var(--main-color);margin-bottom: 30px;}
 .landing .text p {color: var(--main-color);line-height: 1.4;text-align: justify;}
 .landing .text form {}
-.landing .text form input[type=button] {width:172px ;color: white;height:30px ;background-color: var(--main-color);border: none;border-radius:10px;}
+.landing .text form input[type=button] {width:172px ;color:var(--main-color-alt);height:30px ;background-color: var(--main-color);border: none;border-radius:10px;}
 .landing .imge {margin-top: 75px;}
-.landing .imge::before {content: "";position: absolute;border-radius: 50%;border: 5px solid #6c9894;background-image: url(../images/maria.jpg);max-width:300px;left:420px;top:230px;}
+.landing .imge::before {content: "";position: absolute;border-radius: 50%;border: 5px solid var(--main-color);background-image: url(../images/maria.jpg);max-width:300px;left:420px;top:230px;}
 .landing .imge img {max-width:400px;}
 @media (max-width:992px) {.landing {height: calc(100vh - 45px);} .landing .container {flex-wrap: wrap;}.landing .text {margin-left: auto;margin-right: auto;width: 300px;margin-top: -40px;} .landing .imge::before{left: 99px;top: 421px;width: 194px;height: 184px;} .landing .imge {margin-top: 40px;}.landing .imge img {max-width: 355px;}}
 /* end landing */
