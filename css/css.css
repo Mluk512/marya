@@ -87,9 +87,9 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 .landing .container {display: flex;justify-content: space-between;}
 .landing .text {margin-top: 200px;text-align: center; width: 50%;  }
 .landing .text h1 {color:var(--main-color);margin-bottom: 30px;}
-.landing .text p {color: var(--main-color);line-height: 1.4;text-align: justify;}
+.landing .text p {color: var(--main-color);line-height: 1.4;text-align: justify;margin-bottom: 30px;}
 .landing .container a {padding: 15px;margin: auto;text-align: center;line-height: 0px;width:172px ;color:var(--main-color-alt);height:30px ;background-color:var(--main-color);border: none;border-radius:10px;}
-.landing img {border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-style: none;border: 6px solid violet;margin: auto;margin-top: 10px;}
+.landing img {border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-style: none;border: 6px solid violet;margin: auto;margin-top: 211px;position: relative;}
 @media (max-width:992px) {.landing {height: calc(50vh - 10px);} .landing .container {flex-wrap: wrap;}.landing .text {margin-left: auto;margin-right: auto;width: 300px;margin-top: -40px;} .landing .imge::before{left: 99px;top: 421px;width: 194px;height: 184px;} .landing .imge {margin-top: 40px;}.landing .imge img {max-width: 355px;}}
 /* end landing */
 
