@@ -83,7 +83,7 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 /* end header */
 
 /* start landing */
-.landing { background-size: cover; height: calc(100vh - 112.29px); position: relative;}
+.landing {padding-top : 10px;padding-bottom:10px; background-size: cover; height: calc(100vh - 112.29px); position: relative;}
 .landing .container {display: flex;justify-content: space-between;}
 .landing .text {margin-top: 200px;text-align: center; width: 50%;  }
 .landing .text h1 {color:var(--main-color);margin-bottom: 30px;}
