@@ -37,6 +37,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* small */
 @media (min-width: 768px) {
     .container {
@@ -87,18 +88,16 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 .landing .text {margin-top: 200px;text-align: center; width: 50%;  }
 .landing .text h1 {color:var(--main-color);margin-bottom: 30px;}
 .landing .text p {color: var(--main-color);line-height: 1.4;text-align: justify;}
-.landing .text form input[type=button] {width:172px ;color:var(--main-color-alt);height:30px ;background-color: var(--main-color);border: none;border-radius:10px;}
-.landing .imge {margin-top: 75px;}
-.landing .imge::before {content: "";position: absolute;border-radius: 50%;border: 5px solid var(--main-color);background-image: url(../images/maria.jpg);max-width:300px;left:420px;top:230px;}
-.landing .imge img {max-width:400px;}
-@media (max-width:992px) {.landing {height: calc(100vh - 45px);} .landing .container {flex-wrap: wrap;}.landing .text {margin-left: auto;margin-right: auto;width: 300px;margin-top: -40px;} .landing .imge::before{left: 99px;top: 421px;width: 194px;height: 184px;} .landing .imge {margin-top: 40px;}.landing .imge img {max-width: 355px;}}
+.landing .container a {padding: 15px;margin: auto;text-align: center;line-height: 0px;width:172px ;color:var(--main-color-alt);height:30px ;background-color:var(--main-color);border: none;border-radius:10px;}
+.landing img {position: relative;;border-radius: 50%;border-style: none;border: 6px solid violet;margin: auto;margin-top: 10px;}
+@media (max-width:992px) {.landing {height: calc(50vh - 0px);} .landing .container {flex-wrap: wrap;}.landing .text {margin-left: auto;margin-right: auto;width: 300px;margin-top: -40px;} .landing .imge::before{left: 99px;top: 421px;width: 194px;height: 184px;} .landing .imge {margin-top: 40px;}.landing .imge img {max-width: 355px;}}
 /* end landing */
 
 /* end landing */
 .Admin {background-color: var(--main-color);background-size: cover;color: var(--main-color-alt);min-height: 100vh;position:relative;width: 100%;height: 100%;top: 0;left: 0;}
 .Admin .container {display:grid;grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));gap: 40px;text-align: center;padding: 0;}
 .Admin .container .imag {padding: 0;position: relative;}
-.Admin .container .imag::before {content: "";position: absolute;background: url(../images/shape002.png);top: -22px;left: 27px;width:301px;height:299px;margin-left: 0px;}
+.Admin .container .imag::before {content: "";position: absolute;background: url(../images/shape002.png);top: -23px;left: 42px;width:301px;height:299px;margin-left: 0px;}
 .Admin .container .imag .img {border-radius: 50%;width: 250px;max-width: 100%;position: relative;padding: 20px;}
 /* end landing */
 
@@ -119,8 +118,7 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 .choose .container .fon {text-align: center;}
 .choose .container .fon h4 {font-size: 50px;}
 .choose .container .fon p {line-height: 1.5;margin-top: -25px;}
-.choose .container .fon form {margin-top: 25px;}
-.choose .container .fon form input[type=button] {color: var(--main-color);background-color: var(--main-color-alt);border:none;width:200px ;height:40px ;}
+.choose .container a {padding: 7px;text-align: center;line-height: 0px;width:172px ;color:var(--main-color);height:30px ;background-color:var(--main-color-alt);border: none;border-radius:10px;}
 @media (max-width:992px) {.choose .container {flex-wrap: wrap;}} 
 /* end choose */
 
@@ -128,11 +126,10 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 .choose2 {color: var(--main-color);background-color: var(--main-color-alt);position: relative;min-height: 100vh;overflow: hidden;padding:0 ;margin: 0;}
 .choose2::before {content: "";background: url(../images/shape.png);width: 666px;height: 668px;position: absolute;top: 0px;right: -500px ;}
 .choose2 .container {display: flex;justify-content: space-between;align-items: center;}
-.choose2 .container img {min-width: 20%;}
-.choose2 .container .fon {text-align: center;}
+.choose2 .container img {min-width: 20%;margin-top: 20px;}
+.choose2 .container .fon {z-index: 10;text-align: center;}
 .choose2 .container .fon h4 {font-size: 50px;}
-.choose2 .container .fon form {margin-top: 25px;}
-.choose2 .container .fon form input[type=button] {color: var(--main-color-alt);background-color: var(--main-color);border:none;width:200px ;height:40px ;}
+.choose2 .container a {padding: 7px;text-align: center;line-height: 0px;width:172px ;color:var(--main-color-alt);height:30px ;background-color:var(--main-color);border: none;border-radius:10px;}
 @media (max-width:992px) {.choose2 .container {flex-wrap: wrap;}} 
 
 /* end choose2 */
@@ -142,17 +139,20 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 .sall .container {display: grid;grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));gap: 100px;text-align: center;padding: 0;}
 .sall .container .cart {padding: 10px;background-color: var(--main-color-alt);border-radius: 5px;color: var(--main-color);text-align: center;}
 .sall .container .cart img {width:130px;}
-.sall .container .cart a {width: 300px;height:50px ;background-color: var(--main-color);color: var(--main-color-alt);border: none;padding: 10px;}
+.sall .container .cart a {border-radius: 20px;padding: 15px;width: 300px;height:0px ;background-color: var(--main-color);color: var(--main-color-alt);border: none;padding: 10px;}
 /* end sall */
 
 /* start maria */
 .maria {padding-top:50px;padding-bottom: var(--main-bottom);background-color: var(--main-color-alt);color: var(--main-color);position: relative;text-align: center;}
 .maria .container .carte {position: relative;}
-.maria .container .carte img {border-radius: 50%;position: relative;max-width: 210px;}
+.maria .container .carte img {border: 5px solid violet;border-radius: 50%;position: relative;max-width: 210px;}
 .maria .container .carte::before {content: "";position: absolute;background: url(../images/shape002.png);top:-50px;left: 418px;width:301px;height:299px;margin-left: 0px;}
 .maria .container .carte h3 {margin-top: 50px;}
 .maria .container .carte p {line-height: 1.6;}
-@media (max-width:992px) {.maria .container .carte::before{left: 25px;}}
+.contactus .container form {direction: ltr;z-index: 100;}
+.contactus .container form input[type="email"] { border: 1px solid var(--main-color-alt); border-right: none; background:none; padding: 10px 20px 10px 60px; caret-color:var(--main-color-alt); width: calc(100% - 126px); border-radius:15px 0 0 15px ; -webkit-border-radius:15px 0 0 15px ; -moz-border-radius:15px 0 0 15px ; -ms-border-radius:15px 0 0 15px ; -o-border-radius:15px 0 0 15px ; }
+.contactus .container form input[type="submit"] { width: 120px; background-color: var(--main-color-alt); color: var(--main-color); padding: 10px 20px; border: 1px solid var(--main-color-alt); border-left: none; text-transform: uppercase; border-radius:0 15px 15px 0 ; -webkit-border-radius:0 15px 15px 0 ; -moz-border-radius:0 15px 15px 0 ; -ms-border-radius:0 15px 15px 0 ; -o-border-radius:0 15px 15px 0 ; }
+@media (max-width:992px) {.maria .container .carte::before{left: 29px;}}
 /* end maria */
 
 /* start contactus */
@@ -162,8 +162,7 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 .contactus .container .text {margin-bottom: 120px;}
 .contactus .container .text h3 {font-size: 20px;line-height: 2;}
 .contactus .container form {direction: ltr;z-index: 100;}
-.contactus .container form input[type="email"] { border: 1px solid var(--main-color-alt); border-right: none; background:none; padding: 10px 20px 10px 60px; caret-color:var(--main-color-alt); width: calc(100% - 126px); border-radius:15px 0 0 15px ; -webkit-border-radius:15px 0 0 15px ; -moz-border-radius:15px 0 0 15px ; -ms-border-radius:15px 0 0 15px ; -o-border-radius:15px 0 0 15px ; }
-.contactus .container form input[type="submit"] { width: 120px; background-color: var(--main-color-alt); color: var(--main-color); padding: 10px 20px; border: 1px solid var(--main-color-alt); border-left: none; text-transform: uppercase; border-radius:0 15px 15px 0 ; -webkit-border-radius:0 15px 15px 0 ; -moz-border-radius:0 15px 15px 0 ; -ms-border-radius:0 15px 15px 0 ; -o-border-radius:0 15px 15px 0 ; }
+.contactus .container a {padding: 15px;text-align: center;line-height: 0px;width:172px ;color:var(--main-color-alt);height:30px ;background-color:var(--main-color);border: none;border-radius:10px;}
 @media (max-width:767px) {.contactus .container form input[typ="submit"] {width: 100px;}}
 /* end contactus */
 
