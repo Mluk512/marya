@@ -83,22 +83,23 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 /* end header */
 
 /* start landing */
-.landing { background-size: cover; height: calc(100vh - 112.29px); position: relative;}
-.landing .container {display: flex;justify-content: space-between;}
-.landing .text {margin-top: 200px;text-align: center; width: 50%;  }
-.landing .text h1 {color:var(--main-color);margin-bottom: 30px;}
-.landing .text p {color: var(--main-color);line-height: 1.4;text-align: justify;margin-bottom: 30px;}
-.landing .container a {padding: 15px;margin: auto;text-align: center;line-height: 0px;width:172px ;color:var(--main-color-alt);height:30px ;background-color:var(--main-color);border: none;border-radius:10px;}
-.landing img {border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-style: none;border: 6px solid violet;margin: auto;margin-top: 211px;position: relative;}
-@media (max-width:992px) {.landing {height: calc(100vh - 10px);} .landing .container {flex-wrap: wrap;}.landing .text {margin-left: auto;margin-right: auto;width: 300px;margin-top: -40px;} .landing .imge::before{left: 99px;top: 421px;width: 194px;height: 184px;} .landing .imge {margin-top: 40px;}.landing .imge img {max-width: 355px;}}
+.landing { background-size: cover; height: 100vh; position: relative;}
+.landing .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; position: relative; top:50%; transform:translateY(-50%) ; -webkit-transform:translateY(-50%) ; -moz-transform:translateY(-50%) ; -ms-transform:translateY(-50%) ; -o-transform:translateY(-50%) ; }
+.landing .container .text {text-align: center; max-width: 600px;position: relative; padding: 30px;}
+.landing .container .text h1 {color:var(--main-color);}
+.landing .container .text p {color: var(--main-color);line-height: 1.4;text-align: justify;}
+.landing .container .text a {padding: 15px;background-color: var(--main-color);border-radius: 10px;display: block;width: fit-content;margin: auto;}
+.landing .container .img {position: relative;max-width: 100%;}
+.landing .container .img::before {content: "";position: absolute;top: 50%;left: 50%;width: 300px;height: 300px;background: url(../images/shape002.png);z-index: -1;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);}
+.landing .container .img img { border: 5px solid var(--main-color); border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
+@media (max-width:992px) {.landing .container {align-items: center;justify-content: center;}.landing .text {margin-bottom: 50px;}}
 /* end landing */
 
 /* end landing */
 .Admin {background-color: var(--main-color);background-size: cover;color: var(--main-color-alt);min-height: 100vh;position:relative;width: 100%;height: 100%;top: 0;left: 0;}
-.Admin .container {display:grid;grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));gap: 40px;text-align: center;padding: 0;}
-.Admin .container .imag {padding: 0;position: relative;}
-.Admin .container .imag::before {content: "";position: absolute;background: url(../images/shape002.png);top: -23px;left: 42px;width:301px;height:299px;margin-left: 0px;}
-.Admin .container .imag .img {border-radius: 50%;width: 250px;max-width: 100%;position: relative;padding: 20px;}
+.Admin .container {display: grid;grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));gap: 40px;text-align: center;position: relative;}
+.Admin .container .imag {position: relative;}
+.Admin .container .imag .img {border-radius: 50%;width: 200px;max-width: 100%;position: relative;}
 /* end landing */
 
 /* start Achievements */
@@ -144,9 +145,10 @@ header .container .image::before { content: "";width: 80px;height: 80px;top: -30
 
 /* start maria */
 .maria {padding-top:50px;padding-bottom: var(--main-bottom);background-color: var(--main-color-alt);color: var(--main-color);position: relative;text-align: center;}
-.maria .container .carte {position: relative;}
-.maria .container .carte img {border: 5px solid violet;border-radius: 50%;position: relative;max-width: 210px;}
-.maria .container .carte::before {content: "";position: absolute;background: url(../images/shape002.png);top:-50px;left: 418px;width:301px;height:299px;margin-left: 0px;}
+.maria .container .carte {position: relative;margin-top: 40px;}
+.maria .container .carte .img {position: relative;max-width: 100%;}
+.maria .container .carte .img::before { content: ""; position: absolute; background: url(../images/shape002.png); top:50%; left:50%; width:301px; height:299px; transform:translate(-50% , -50%) ; -webkit-transform:translate(-50% , -50%) ; -moz-transform:translate(-50% , -50%) ; -ms-transform:translate(-50% , -50%) ; -o-transform:translate(-50% , -50%) ; }
+.maria .container .carte .img img {border: 5px solid violet;border-radius: 50%;position: relative;max-width: 210px;}
 .maria .container .carte h3 {margin-top: 50px;}
 .maria .container .carte p {line-height: 1.6;}
 .contactus .container form {direction: ltr;z-index: 100;}
